@@ -9,12 +9,10 @@ var specchio = spelling.reverse();
 console.log(specchio); */
 
 function parolaSpeculare(parola) {
-    var parola;
-    console.log(parola);
     var spelling = parola.split("");
-    console.log(spelling);
     var specchio = spelling.reverse();
-    console.log(specchio);
+    var risultato = specchio.join("");
+    return risultato;
 }
 
 console.log(parolaSpeculare("parola"));
