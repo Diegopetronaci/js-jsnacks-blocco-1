@@ -8,24 +8,23 @@ console.log(lettere);
 var numeri = [1, 2, 3, 4, 5, 6];
 console.log(numeri);
 
-var misto = [];
 
 
-function unione(array1,array2,array3) {
-
+function unione(array1,array2) {
     
-    for (i = 0; i < array3.length; i++) {
-        if (array1[i]<array2[i]) {
-            array3.push(array1[i]);
-            array3.push(array2[i]);
-        } else {
-            
-        }
+    var misto = [];
+    
+    for (i = 0; i < array1.length; i++) {
+        
+        misto.push(array1[i]);
+        misto.push(array2[i]);
+        
     }
+    return misto;
 
 }
 
-console.log(unione(lettere,numeri,misto));
+console.log(unione(lettere,numeri));
 
 
 
