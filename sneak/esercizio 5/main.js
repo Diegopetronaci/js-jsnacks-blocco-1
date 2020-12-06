@@ -26,8 +26,15 @@ var b = Number(prompt("inserisci un numero da 0 a 9"));
 var numeri = [1,2,3,4,5,6,7,8,9,10];
 console.log(numeri);
 
-var arrNuova = mySplice(numeri, a, b);
+/* var arrNuova = mySplice(numeri, a, b); */
 
-console.log(arrNuova);
+/* console.log(arrNuova); */
 
 //da completare con verifica per non far mettere b minore di a
+
+if (b <= a) {
+    alert("attenzione, il primo numero deve essere minore del secondo");
+} else {
+    var arrNuova = mySplice(numeri, a, b);
+    console.log(arrNuova);
+}
